@@ -1,0 +1,94 @@
+:root {
+	--greyDark: #141414;
+	--greyMedium: #5B5655;
+	--greyLight: #9E9D9D;
+	--greyLightest: #D9D8D7;
+	--purpleDark: #777FAF;
+	--purpleMedium: #552DB9;
+	--purpleLight: #CAC1E1;
+	--headerFontSize: 19px;
+	--contentFontSize: 16px;
+	--formInputSize: 39px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: arial;
+}
+
+body > * {
+  height: 100%;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+.view {
+  height: 100%;
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginContainer {
+	width: 320px;
+	max-height: 420px;
+}
+
+.loginForm {
+  position: relative;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 10px var(--greyLightest)
+}
+
+.loginForm input {
+  font-family: arial;
+  outline: 0;
+  border: 0;
+  background: var(--greyLightest);
+  color: black;
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.loginForm button {
+  font-family: arial;
+  text-transform: uppercase;
+  outline: 0;
+  background: var(--purpleLight);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 19px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.loginForm button:hover,.loginFormform button:active,.loginForm button:focus {
+  background: var(--purpleDark);
+}
+
+.message {
+  margin: 15px 0 0;
+  color: var(--greyMedium);
+  font-size: 14px;
+}
+.message a {
+  color: var(--purpleMedium);
+  text-decoration: none;
+  margin-left: 5px;
+}
